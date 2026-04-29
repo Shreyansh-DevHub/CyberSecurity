@@ -40,15 +40,14 @@ I am following Professor Messer’s structured video series and supplementing wi
 
 ## 🎯 Goals
 - Document my daily learning progress  
-- Build a strong foundation in networking concepts  
-- Prepare for the **CompTIA Network+ (N10-009)** exam  
+- Build a strong foundation in networking concepts    
 - Share notes and resources for others studying alongside me  
 
 ---
 
 ## 🔗 Resources
 - [Professor Messer’s CompTIA Network+ Course](https://www.professormesser.com/network-plus/n10-009/)  
-- [CompTIA Network+ Official Exam Objectives](https://www.comptia.org/certifications/network)  
+
 
 ---
 
