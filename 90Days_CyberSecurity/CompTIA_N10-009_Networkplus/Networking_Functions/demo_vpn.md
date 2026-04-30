@@ -1,18 +1,13 @@
-# OSI Model Lab
+# VPN Demo
 
 ## Objective
-Capture network traffic and map protocols to OSI layers.
+Establish a secure tunnel between two virtual machines.
 
 ## Steps
-1. Open Wireshark and start capturing packets.
-2. Visit websites
-3. Stop capture and analyze packets.
+1. Install OpenVPN on both VMs.
+2. Configure server with 10.8.0.1/24 subnet.
+3. Connect client to server using .ovpn profile.
 
-## Findings
-- **Layer 7 (Application):** HTTPS GET request
-- **Layer 4 (Transport):** TCP segment with port 80
-- **Layer 3 (Network):** IPv4 packet with source/destination IP
-- **Layer 2 (Data Link):** Ethernet frame with MAC addresses
-- **Layer 1 (Physical):** Represented by the actual transmission medium
-
-
+## Verification
+- Client can ping server through VPN tunnel.
+- Traffic is encrypted (verified with Wireshark).

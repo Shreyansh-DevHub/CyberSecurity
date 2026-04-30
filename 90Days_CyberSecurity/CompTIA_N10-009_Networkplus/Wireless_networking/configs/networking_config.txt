@@ -1,0 +1,28 @@
+Configure SSID and Basic Settings
+
+Router> enable
+Router# configure terminal
+Router(config)# interface wlan0
+Router(config-if)# ssid NetworkPlusLab
+Router(config-if)# channel 6
+Router(config-if)# no shutdown
+
+
+Set Up WPA2/WPA3 Security
+
+
+Router(config)# security-mode wpa3
+Router(config)# wpa3-passphrase CompTIA@2026
+Router(config)# encryption aes
+
+
+Enable DHCP for Wireless Clients
+
+Router(config)# ip dhcp pool WLAN
+Router(dhcp-config)# network 192.168.50.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.50.1
+Router(dhcp-config)# dns-server 8.8.8.8
+
+
+
+""all this is done in cisco packet tracer""

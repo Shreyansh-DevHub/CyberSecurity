@@ -1,0 +1,31 @@
+Set Up IPv4 and IPv6 Interfaces
+
+Router> enable
+Router# configure terminal
+Router(config)# interface gigabitEthernet0/0
+Router(config-if)# ip address 192.168.10.1 255.255.255.0
+Router(config-if)# ipv6 address 2001:db8:10::1/64
+Router(config-if)# no shutdown
+
+
+Configure Static Routes
+
+Router(config)# ip route 192.168.20.0 255.255.255.0 192.168.10.2
+Router(config)# ipv6 route 2001:db8:20::/64 2001:db8:10::2
+
+
+Enable NAT for IPv4
+
+Router(config)# interface gigabitEthernet0/1
+Router(config-if)# ip nat inside
+Router(config)# interface gigabitEthernet0/0
+Router(config-if)# ip nat outside
+Router(config)# ip nat inside source list 1 interface gigabitEthernet0/0 overload
+Router(config)# access-list 1 permit 192.168.10.0 0.0.0.255
+
+
+Verify Routing
+
+Router# show ip route
+Router# show ipv6 route
+Router# ping 2001:db8:20::2

@@ -5,18 +5,16 @@ This repository contains practical projects inspired by Professor Messer’s Net
 
 ## 📂 Project Index
 
-- [OSI Model Understanding](./OSI_model_understanding)  
-  Take a guided look at how information actually travels through the seven layers of the OSI model — with simple examples and troubleshooting tips that make the theory feel real.
-
-- [Networking Functions](./Networking_Functions)  
-  See the everyday “jobs” that networks perform — from moving data between devices to keeping connections stable — explained through hands‑on labs and clear demonstrations.
-
-- [Subnetting & IPv4](./Subnetting_&_IPv4)  
-  Learn how to break down a big network into smaller, manageable pieces. With step‑by‑step subnetting exercises and router setups, you’ll see how IP planning works in practice.
-
-- [Cloud Design](./cloud_design)  
-  Explore how modern networks extend into the cloud. This section shows you how on‑premises systems connect with cloud services, with a focus on simplicity, scalability, and security.
-
+- [Cloud Design](./cloud_design)
+- [Monitoring & Troubleshooting](./Monitoring&Troubleshooting)
+- [Network Security](./Network_security)
+- [Networking Functions](./Networking_Functions)
+- [Network Performance Optimization](./NetworkPerformanceOtimizat​ion)
+- [OSI Model Understanding](./OSI_model_understanding)
+- [Routing Basics](./Routing_basics)
+- [Subnetting & IPv4](./Subnetting_&_IPv4)
+- [Switching & VLAN](./Switching_&_Vlan)
+- [Wireless Networking](./Wireless_networking)
 ---
 
 ## 🧪 Learning Objectives
@@ -33,3 +31,6 @@ This repository contains practical projects inspired by Professor Messer’s Net
 - GitHub for version control and collaboration  
 
 ---
+### 🏆 Credits
+This repository was created collaboratively with guidance from **Google** and inspired by **CompTIA Network+ (N10‑009)** course materials by **Professor Messer**.  
+All configurations, diagrams, and documentation are educational examples for learning purposes.

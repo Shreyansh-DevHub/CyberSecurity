@@ -1,0 +1,31 @@
+Configure Firewall ACLs
+
+Router> enable
+Router# configure terminal
+Router(config)# access-list 100 permit tcp 192.168.10.0 0.0.0.255 any eq 443
+Router(config)# access-list 100 deny ip any any
+Router(config)# interface gigabitEthernet0/0
+Router(config-if)# ip access-group 100 in
+
+
+Set Up a Basic VPN Tunnel
+
+
+Router(config)# crypto isakmp policy 10
+Router(config-isakmp)# encryption aes
+Router(config-isakmp)# hash sha256
+Router(config-isakmp)# authentication pre-share
+Router(config-isakmp)# group 14
+Router(config)# crypto isakmp key CompTIA@VPN address 203.0.113.2
+Router(config)# crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+Router(config)# crypto map VPN-MAP 10 ipsec-isakmp
+Router(config-crypto-map)# set peer 203.0.113.2
+Router(config-crypto-map)# set transform-set VPN-SET
+Router(config-crypto-map)# match address 101
+Router(config)# interface gigabitEthernet0/1
+Router(config-if)# crypto map VPN-MAP
+
+
+
+
+"all these codes are from cisco packet tracer and the commands re taken from google for refrence"

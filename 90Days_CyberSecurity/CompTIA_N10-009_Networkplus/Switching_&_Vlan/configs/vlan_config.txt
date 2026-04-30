@@ -1,0 +1,22 @@
+##Cisco config
+
+Switch> enable
+Switch# configure terminal
+Switch(config)# vlan 10
+Switch(config-vlan)# name HR
+Switch(config)# vlan 20
+Switch(config-vlan)# name Finance
+Switch(config)# vlan 30
+Switch(config-vlan)# name IT
+
+##Assign ports to vlan
+
+Switch(config)# interface fastEthernet0/1
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+
+##configure trunking
+
+Switch(config)# interface fastEthernet0/24
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk allowed vlan 10,20,30

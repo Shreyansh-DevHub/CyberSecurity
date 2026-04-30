@@ -1,0 +1,2 @@
+Switch(config)# spanning-tree vlan 10 priority 4096
+Switch(config)# spanning-tree vlan 20 priority 8192

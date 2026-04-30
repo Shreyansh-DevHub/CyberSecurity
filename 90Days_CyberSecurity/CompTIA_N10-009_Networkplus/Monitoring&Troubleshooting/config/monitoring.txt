@@ -1,0 +1,16 @@
+Basic Connectivity Tests
+
+PC> ping 192.168.10.1
+PC> ping 8.8.8.8
+PC> traceroute 8.8.8.8
+
+
+Analyze Routing and Ports
+
+PC> netstat -an
+Router# show ip route
+Router# show interfaces status
+
+
+
+"all this code is tested in wireshark"

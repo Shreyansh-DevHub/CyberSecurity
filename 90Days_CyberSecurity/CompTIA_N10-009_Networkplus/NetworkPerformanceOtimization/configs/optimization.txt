@@ -1,0 +1,28 @@
+Configure QoS for Voice Traffic
+
+Router> enable
+Router# configure terminal
+Router(config)# class-map match-any VOICE
+Router(config-cmap)# match protocol rtp
+Router(config)# policy-map QOS-POLICY
+Router(config-pmap)# class VOICE
+Router(config-pmap-c)# priority percent 30
+Router(config)# interface gigabitEthernet0/0
+Router(config-if)# service-policy output QOS-POLICY
+
+
+Set Bandwidth Limits
+
+Router(config)# interface gigabitEthernet0/1
+Router(config-if)# bandwidth 100000
+Router(config-if)# traffic-shape rate 80000
+
+
+Implement Load Balancing
+
+Router(config)# ip route 0.0.0.0 0.0.0.0 192.168.1.1
+Router(config)# ip route 0.0.0.0 0.0.0.0 192.168.2.1
+
+
+
+"all the work done here is made in cisco paket tracer"
