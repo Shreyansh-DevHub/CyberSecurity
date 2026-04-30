@@ -26,7 +26,8 @@ This repository contains practical projects inspired by Professor Messer’s Net
 ---
 
 ## 🧰 Tools Used
-- Cisco Packet Tracer  
+- Cisco Packet Tracer
+- WireShark 
 - Markdown for documentation  
 - GitHub for version control and collaboration  
 
