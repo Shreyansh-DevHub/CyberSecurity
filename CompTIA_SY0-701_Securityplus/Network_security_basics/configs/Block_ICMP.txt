@@ -1,0 +1,3 @@
+Name	Group	Profile	Enabled	Action	Override	Program	Local Address	Remote Address	Protocol	Local Port	Remote Port	Authorized Users	Authorized Computers	Authorized Local Principals	Local User Owner	PolicyAppId	Application Package	
+Block_ICMP		All	Yes	Block	No	Any	Any	Any	ICMPv4	Any	Any	Any	Any	Any	Any	None	Any	
+	

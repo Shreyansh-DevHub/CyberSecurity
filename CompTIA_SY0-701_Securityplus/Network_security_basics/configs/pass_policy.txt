@@ -1,0 +1,6 @@
+Password Policy Settings (Windows Local Security Policy)
+
+- Minimum password length: 8
+- Password must meet complexity requirements: Enabled
+- Maximum password age: 30 days
+- Enforce password history: 5 passwords remembered
