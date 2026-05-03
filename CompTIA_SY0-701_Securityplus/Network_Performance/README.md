@@ -15,7 +15,9 @@ It also included testing different conditions (wired vs wireless, firewall enabl
   iperf3 -s
 
 Ran iperf3 client from another terminal:
+```bash
 iperf3 -c <server_ip>
 
 ### 2. Latency Test with Ping
+```bash
 traceroute 8.8.8.8
