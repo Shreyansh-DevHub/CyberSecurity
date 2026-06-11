@@ -2,21 +2,6 @@
 """system_devices_fetcher.py
 
 Beginner-friendly (stdlib only) device inventory from the *local* Windows ARP table.
-
-What it returns:
-- IP address (from ARP)
-- MAC address (from ARP)
-- Adapter name (very basic grouping)
-
-Notes:
-- Models/vendor are often not available without external lookups or router-level access.
-- This script is intentionally limited to safe, local, read-only info.
-
-Run:
-  python system_devices_fetcher.py
-
-Optional:
-  python system_devices_fetcher.py --save devices.json
 """
 
 from __future__ import annotations
